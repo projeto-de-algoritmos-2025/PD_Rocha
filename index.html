@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento de Sequências por Custo Mínimo</title>
+    <title>Alinhamento de Sequências: Visualização do Processo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Alinhamento de Sequências (Custo Mínimo)</h1>
-        <p class="intro">Este algoritmo encontra o alinhamento com o menor custo total, onde cada operação (mismatch, gap) tem um preço. O objetivo é transformar a primeira sequência na segunda com o menor custo possível.</p>
+        <h1>Alinhamento de Sequências: Visualização do Processo</h1>
+        <p class="intro">Veja como o alinhamento é construído a partir da matriz de custo. Primeiro, calcule a matriz. Depois, inicie a visualização do traceback.</p>
+        
         <div class="controls">
             <div class="input-group">
                 <label for="seq1">Palavra / Sequência 1:</label>
@@ -32,7 +33,11 @@
                 <input type="number" id="gap" value="2">
             </div>
         </div>
-        <button onclick="runAlignment()">Alinhar Sequências e Visualizar Processo</button>
+
+        <div class="button-group">
+            <button id="calculate-btn" onclick="calculateMatrix()">1. Calcular Matriz de Custo</button>
+            <button id="visualize-btn" onclick="visualizeTraceback()" disabled>2. Visualizar Solução (Traceback)</button>
+        </div>
         
         <div id="results">
             <h2 id="results-title" style="display:none;">Resultados</h2>
