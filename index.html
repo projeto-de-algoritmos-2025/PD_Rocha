@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de Sequências por Custo Mínimo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alinhamento de Sequências (Custo Mínimo)</h1>
+        <p class="intro">Este algoritmo encontra o alinhamento com o menor custo total, onde cada operação (mismatch, gap) tem um preço. O objetivo é transformar a primeira sequência na segunda com o menor custo possível.</p>
+        <div class="controls">
+            <div class="input-group">
+                <label for="seq1">Palavra / Sequência 1:</label>
+                <input type="text" id="seq1" value="GATTACA">
+            </div>
+            <div class="input-group">
+                <label for="seq2">Palavra / Sequência 2:</label>
+                <input type="text" id="seq2" value="GCATGCU">
+            </div>
+            <div class="input-group">
+                <label for="match">Custo Match:</label>
+                <input type="number" id="match" value="0">
+            </div>
+            <div class="input-group">
+                <label for="mismatch">Custo Mismatch:</label>
+                <input type="number" id="mismatch" value="1">
+            </div>
+            <div class="input-group">
+                <label for="gap">Custo Gap:</label>
+                <input type="number" id="gap" value="2">
+            </div>
+        </div>
+        <button onclick="runAlignment()">Alinhar Sequências e Visualizar Processo</button>
+        
+        <div id="results">
+            <h2 id="results-title" style="display:none;">Resultados</h2>
+            <div id="score-output"></div>
+            <div id="alignment-output"></div>
+            <div id="matrix-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
