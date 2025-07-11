@@ -1,12 +1,11 @@
-/* Importa a fonte 'Inter' do Google Fonts para um visual moderno e nítido */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background-color: #f8f9fa; /* Fundo cinza bem claro para fazer as cores saltarem */
-    color: #343a40; /* Texto principal com bom contraste */
+    background: linear-gradient(to bottom right, #ffe4f2, #f0e8ff);
+    color: #3d3d4f;
 }
 
 .container {
@@ -14,35 +13,50 @@ body {
     margin: auto;
     background: #ffffff;
     padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #dee2e6;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); /* Sombra mais pronunciada */
+    border-radius: 16px;
+    border: 1px solid #f3d5ff;
+    box-shadow: 0 12px 40px rgba(201, 108, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 🌸 figura decorativa no fundo da caixa */
+.container::before {
+    content: "🦋";
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 64px;
+    opacity: 0.08;
+    pointer-events: none;
 }
 
 h1 {
-    font-weight: 900; /* Peso máximo da fonte para impacto */
-    font-size: 2.5rem;
+    font-weight: 900;
+    font-size: 2.6rem;
     text-align: center;
-    /* Efeito de gradiente vivo no texto do título principal */
-    background: linear-gradient(45deg, #007bff, #8e44ad);
+    background: linear-gradient(45deg, #ff69b4, #8e44ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
     padding-bottom: 10px;
     margin-bottom: 0;
 }
 
 h2 {
     text-align: center;
-    color: #007bff; /* Azul vibrante para subtítulos */
-    border-bottom: 2px solid #e9ecef;
+    color: #d63384;
+    border-bottom: 2px solid #f8d7ff;
     padding-bottom: 10px;
+    margin-top: 30px;
+    position: relative;
+}
+h2::before {
+    content: "✨ ";
 }
 
 .intro {
     text-align: center;
-    color: #6c757d;
+    color: #6f42c1;
     margin-top: 10px;
     margin-bottom: 30px;
     font-size: 1.1em;
@@ -55,110 +69,138 @@ h2 {
     margin-bottom: 25px;
 }
 
-.input-group { display: flex; flex-direction: column; }
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
 .input-group label {
     font-weight: 700;
     margin-bottom: 8px;
-    color: #495057;
+    color: #a44fbf;
 }
 .input-group input {
     padding: 12px;
-    border: 1px solid #ced4da;
-    border-radius: 8px; /* Bordas um pouco mais retas */
+    border: 1px solid #e0b3f0;
+    border-radius: 12px;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: 0.3s;
 }
 .input-group input:focus {
     outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
+    border-color: #da77f2;
+    box-shadow: 0 0 0 4px rgba(218, 119, 242, 0.4);
 }
 
 .button-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
 }
 
 button {
     padding: 14px;
-    background-color: #007bff; /* Azul primário vibrante */
+    background: linear-gradient(135deg, #ff80bf, #a66cff);
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 700;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease;
 }
-
 button:hover {
-    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
-    transform: scale(1.03); /* Efeito de crescimento */
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(195, 76, 255, 0.3);
 }
 button:disabled {
-    background-color: #6c757d;
+    background-color: #c9c9c9;
     cursor: not-allowed;
-    transform: scale(1);
-    box-shadow: none;
-    opacity: 0.65;
+    opacity: 0.6;
 }
 
-#results { margin-top: 30px; }
+#results {
+    margin-top: 30px;
+}
+
 #explanation {
     text-align: center;
-    padding: 12px;
-    background-color: #e9ecef;
-    border-radius: 8px;
+    padding: 14px;
+    background-color: #fbeaff;
+    border-radius: 12px;
     margin-bottom: 20px;
     font-size: 1.1em;
-    min-height: 40px;
-    color: #343a40;
-    border-left: 5px solid #007bff; /* Detalhe lateral */
+    color: #5e2f7f;
+    border-left: 6px solid #ff69b4;
+    position: relative;
+}
+#explanation::before {
+    content: "💡 ";
+    position: absolute;
+    left: 10px;
 }
 
 .alignment-result {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.25em;
+    font-size: 1.2em;
     font-weight: bold;
     white-space: pre;
-    background: #212529; /* Fundo escuro para alto contraste */
-    color: #f8f9fa;
+    background: #3d0066;
+    color: #ffe6f7;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow-x: auto;
     text-align: center;
     min-height: 80px;
 }
 
 /* Cores vivas para Match, Mismatch e Gap */
-.match { color: #198754; /* Verde forte */ }
-.mismatch { color: #dc3545; /* Vermelho forte */ }
-.gap { color: #0d6efd; /* Azul forte */ }
+.match {
+    color: #28a745;
+}
+.mismatch {
+    color: #e83e8c;
+}
+.gap {
+    color: #6f42c1;
+}
 
-#matrix-container { overflow-x: auto; margin-top: 20px; }
+#matrix-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
 
-table { border-collapse: collapse; font-family: 'Courier New', Courier, monospace; margin: auto; }
+table {
+    border-collapse: collapse;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    background-color: #fff0fb;
+}
 th, td {
-    border: 1px solid #dee2e6;
-    padding: 8px;
+    border: 1px solid #f3bfe9;
+    padding: 10px;
     text-align: center;
-    min-width: 45px;
-    height: 45px;
+    min-width: 50px;
+    height: 50px;
     position: relative;
     transition: background-color 0.3s;
 }
-th { background-color: #e9ecef; font-size: 1.1em; color: #495057; font-weight: 700; }
+th {
+    background-color: #ffe6f9;
+    font-size: 1.1em;
+    color: #84229b;
+    font-weight: 700;
+}
 
-/* Destaques vibrantes para a matriz */
-.traceback-path { background-color: rgba(0, 123, 255, 0.2); } /* Azul semi-transparente */
+/* Destaques */
+.traceback-path {
+    background-color: rgba(255, 105, 180, 0.25);
+}
 .traceback-current {
-    background-color: #ffc107; /* Amarelo-dourado vivo */
-    border: 2px solid #e0a800;
+    background-color: #ffd6fc;
+    border: 2px solid #ff69b4;
 }
 .calculating {
-    background-color: rgba(25, 135, 84, 0.15); /* Verde semi-transparente */
-    border: 1px dashed #198754;
+    background-color: rgba(138, 43, 226, 0.15);
+    border: 1px dashed #8e44ad;
 }
