@@ -36,10 +36,16 @@ ou
 
 ## Screenshots
 <p align="center">
-  <b>Alinhamento de sequência</b><br>
-  <img src="./assets/home.png" alt="Substituto 1" width="250" style="margin: 10px;">
-  <img src="./assets/matriz.png" alt="Substituto 2" width="250" style="margin: 10px;">
-  <img src="./assets/percurso.png" alt="Substituto 3" width="250" style="margin: 10px;">
+  <b>Página Inicial</b><br>
+  <img src="./assets/home.png" alt="Substituto 1" width="800" style="margin: 10px;">
+</p>
+<p align="center">
+  <b>Matriz Calculada</b><br>
+  <img src="./assets/matriz.png" alt="Substituto 1" width="800" style="margin: 10px;">
+</p>
+<p align="center">
+  <b>Percurso Feito</b><br>
+  <img src="./assets/percurso.png" alt="Substituto 1" width="800" style="margin: 10px;">
 </p>
 
 
