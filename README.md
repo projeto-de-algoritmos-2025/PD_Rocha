@@ -55,8 +55,8 @@ ou
 
 1. Escolher duas palavras;
 2. Definir os pesos de match, mismatch e gap;
-3. Clicar em "Calcular Matriz" para gerar a matriz de custo;
-4. Se desejar ver uma das formas que o algoritmo pode seguir para chegar ao custo mínimo, clique em "Visualizar Solução".
+3. Clicar em `Calcular Matriz do Custo` para gerar a matriz de custo;
+4. Se desejar ver uma das formas que o algoritmo pode seguir para chegar ao custo mínimo, clique em `Visualizar Solução (Find Solution)`.
 
 ## Link do Vídeo
 
