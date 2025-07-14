@@ -14,11 +14,11 @@
         <div class="controls">
             <div class="input-group">
                 <label for="seq1">Palavra / Sequência 1:</label>
-                <input type="text" id="seq1" value="GATTACA">
+                <input type="text" id="seq1" value="CTACCG">
             </div>
             <div class="input-group">
                 <label for="seq2">Palavra / Sequência 2:</label>
-                <input type="text" id="seq2" value="GCATGCU">
+                <input type="text" id="seq2" value="TACATG">
             </div>
             <div class="input-group">
                 <label for="match">Custo Match:</label>
@@ -26,7 +26,7 @@
             </div>
             <div class="input-group">
                 <label for="mismatch">Custo Mismatch:</label>
-                <input type="number" id="mismatch" value="1">
+                <input type="number" id="mismatch" value="3">
             </div>
             <div class="input-group">
                 <label for="gap">Custo Gap:</label>
@@ -39,13 +39,18 @@
             <button id="visualize-btn" onclick="visualizeTraceback()" disabled>2. Visualizar Solução (Traceback)</button>
         </div>
         
-        <div id="results">
-            <h2 id="results-title" style="display:none;">Resultados</h2>
+        <div class="results-container">
+            <h2 id="results-title" style="display:none;">Resultados do Alinhamento</h2>
+            
+            <div id="cost-display"></div>
+            
             <div id="score-output"></div>
+            
             <div id="alignment-output"></div>
-            <div id="matrix-container"></div>
+
+            <div id="matrix-container"></div> 
         </div>
-    </div>
+        </div>
 
     <script src="script.js"></script>
 </body>
