@@ -176,6 +176,7 @@ async function visualizeTraceback() {
         <h4>Eventos do Alinhamento:</h4>
         <ul>${eventsHTML}</ul>
     `;
+    
 
     document.getElementById('calculate-btn').disabled = false;
 }
