@@ -62,11 +62,13 @@ ou
 
 <div align="center">
 
-[![Assista ao vídeo](https://img.youtube.com/vi/0PBQDbMzL10/0.jpg)](https://youtu.be/0PBQDbMzL10)
+
+[![Assista ao vídeo](https://img.youtube.com/vi/gJgJkZsQNGk/0.jpg)](https://youtu.be/gJgJkZsQNGk)
 
 **Fonte:** [Milena Rocha](https://github.com/milenafrocha) e [Ingrid Alves](https://github.com/alvesingrid)
-Disponível em: [https://youtu.be/0PBQDbMzL10](https://youtu.be/0PBQDbMzL10)
-Acesso em: 12 de julho. 2025.
+**Disponível em:** [https://youtu.be/gJgJkZsQNGk](https://youtu.be/gJgJkZsQNGk)
+**Acesso em:** 14 de julho de 2025.
+
 
 </div>
 
